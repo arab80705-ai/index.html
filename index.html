@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form UMKM - Rumah Makan Minang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-green-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-3xl fade-in">
+    <h1 class="text-2xl font-bold text-center text-blue-600 mb-6">
+      Form Data UMKM
+    </h1>
+
+    <form class="space-y-4">
+
+      <div>
+        <label class="font-semibold">Nama UMKM</label>
+        <input type="text" value="RUMAH MAKAN MINANG" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Nama Pemilik</label>
+        <input type="text" value="RAFFI" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Alamat Lengkap</label>
+        <textarea class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">JL PETAMBURAN 3 SAMPING LAPANGAN KEC TANAH ABANG</textarea>
+      </div>
+
+      <div>
+        <label class="font-semibold">No. HP / WhatsApp</label>
+        <input type="text" value="086517482315" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Email (Opsional)</label>
+        <input type="email" placeholder="Masukkan email..." class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Deskripsi Usaha</label>
+        <textarea class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">
+RM Minang adalah destinasi kuliner khas Sumatera Barat yang menyajikan kelezatan otentik resep turun-temurun. Kami hanya menggunakan rempah-rempah pilihan dan bahan baku segar untuk menjaga cita rasa asli Masakan Padang yang kaya santan dan bumbu. Kebersihan dan kepuasan pelanggan adalah prioritas utama kami.
+        </textarea>
+      </div>
+
+      <div>
+        <label class="font-semibold">Kategori Usaha</label>
+        <input type="text" placeholder="Contoh: Kuliner" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Jam Operasional</label>
+        <input type="text" value="09.00 - 21.00" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Daftar Produk</label>
+        <input type="text" value="RENDANG CABE HIJAU, TUNJANG, AYAM BAKAR, AYAM GORENG" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <hr class="my-4">
+
+      <h2 class="text-lg font-bold text-green-600">Detail Produk</h2>
+
+      <div>
+        <label class="font-semibold">Nama Produk</label>
+        <input type="text" value="RENDANG CABAI HIJAU" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-green-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Harga</label>
+        <input type="text" value="7.000 - 20.000" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-green-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Deskripsi Produk</label>
+        <textarea class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-green-400">
+Usaha Minangkabau yang bersantan dan berkuah serta menyajikan berbagai lauk yang enak dan gurih.
+        </textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white p-3 rounded-lg font-bold hover:scale-105 hover:shadow-lg transition duration-300">
+        Simpan Data
+      </button>
+
+    </form>
+  </div>
+
+</body>
+</html>
